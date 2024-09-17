@@ -5,4 +5,6 @@ while i < my_list_len:
     if my_list[i] >= 0:
         print(my_list[i])
         i += 1
-    
+        continue
+    break
+print('Это все положительные числа')
