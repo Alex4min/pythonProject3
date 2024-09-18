@@ -1,10 +1,12 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-my_list_len = len(my_list)
 i = 0
-while i < my_list_len:
-    if my_list[i] >= 0:
+my_list.pop(4)
+while i < len(my_list):
+    if my_list[i] > 0:
         print(my_list[i])
         i += 1
         continue
-    break
+    elif my_list[i] < 0:
+        i += 1
+        break
 print('Это все положительные числа')
